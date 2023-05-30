@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Decodefi</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-home.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    </head>
+        <header>
+            <h1><img class="banner" src="banner.png" alt="Banner da Decodefi"></h1>
+        </header>
+    </head>
+    <main>
+            <h1>Insira o texto no campo a baixo para ser codificado ou descodificado</h1>
+            <textarea class="codificar" id="codificar" style="height: 60px; width: 500px;"></textarea>
+            <h1><button class="botao1" onclick="encodeText()">Codificar</button></h1>
+            <h1><button class="botao2" onclick="decodeText()">Descodificar</button></h1>
+            <textarea class="decodificar" id="decodificar" style="height: 60px; width: 500px;"></textarea>
+    </main>
+    <footer>
+        <footer>
+            <img class="logo" src="logo.png" alt="Logo da Decodefi">
+            <p class="copyright">&copy; Copyright Decodefi - 2023 
+        </footer>
+    </footer>
+    <script>
+        function encodeText() {
+            const input = document.getElementById("codificar").value;
+            const encodedText = btoa(input);
+            document.getElementById("decodificar").value = encodedText;
+}
+
+        function decodeText() {
+            const input = document.getElementById("codificar").value;
+            const decodedText = atob(input);
+            document.getElementById("decodificar").value = decodedText;
+}
+
+    </script>
+</body>
+</html>

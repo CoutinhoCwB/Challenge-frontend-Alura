@@ -1,0 +1,123 @@
+header   {
+    background: #bdb3b3;
+    padding: 20px 0;
+    background: linear-gradient(#888888,#fefefe);
+}
+
+body    {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px   100px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.codificar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    width: 55%;
+}
+
+.decodificar    {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    width: 55%;
+}
+
+.botao1 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 20px;
+    background: #ff5252;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.botao2 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    background: #ff5252;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botao1:hover {
+    background-color:  rgb(224, 154, 154);
+    scale: 1.2;
+}
+
+.botao2:hover {
+    background-color:  rgb(224, 154, 154);
+    scale: 1.2;
+}
+
+footer  {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(#fefefe,#888888);
+}
+
+.logo   {
+    margin-top: 35px;
+    width: 5%;
+}
+
+.copyright  {
+    color: #bbbbbb;
+    font-size: 13px;
+        
+}
+
+/* alteração de tela de apresentação */
+/* pagina principal */
+
+@media screen and (max-width: 480px) { 
+    .banner, .codificar, .decodificar, .botao{
+        width: auto;
+        padding: 5px 0;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    position:static;
+    text-align: center;
+}
+
+.lista-beneficios {
+    width: 100%;
+    text-align: center;
+}
+
+.imagem-beneficios {
+    width: 100%;
+}

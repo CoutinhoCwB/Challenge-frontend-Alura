@@ -17,9 +17,10 @@
     <main>
             <h1>Insira o texto no campo a baixo para ser codificado ou descodificado</h1>
             <textarea class="codificar" id="codificar" style="height: 60px; width: 500px;"></textarea>
-            <h1><button class="botao1" onclick="encodeText()">Codificar</button></h1>
-            <h1><button class="botao2" onclick="decodeText()">Descodificar</button></h1>
+            <h1><button class="botao1" onclick="encodeText()">Codificar</button>
+            <button class="botao2" onclick="decodeText()">Descodificar</button></h1>
             <textarea class="decodificar" id="decodificar" style="height: 60px; width: 500px;"></textarea>
+            <h1><button class="botaocopiar" onclick="copiarTexto()">Copiar</button></h1>
     </main>
     <footer>
         <footer>
@@ -38,6 +39,13 @@
             const input = document.getElementById("codificar").value;
             const decodedText = atob(input);
             document.getElementById("decodificar").value = decodedText;
+}
+
+        function copiarTexto() {
+            const decodificado = document.getElementById("decodificar");
+            decodificado.select();
+            document.execCommand("copy");
+            alert("Texto copiado!");
 }
 
     </script>

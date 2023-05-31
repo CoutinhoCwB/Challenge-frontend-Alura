@@ -38,25 +38,8 @@ h1 {
 
 .botao1 {
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 20px;
-    background: #ff5252;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    border: none;
-    border-radius: 10px;
-    transition: 1s all;
-    cursor: pointer;
-
-}
-
-.botao2 {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 10px;
+    margin-inline-end: 60px;
+    padding: 10px 20px;
     background: #ff5252;
     color: white;
     font-weight: bold;
@@ -72,7 +55,41 @@ h1 {
     scale: 1.2;
 }
 
+.botao2 {
+    display: inline-block;
+    margin-inline-start: 60px;
+    padding: 10px 10px;
+    background: #ff5252;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
 .botao2:hover {
+    background-color:  rgb(224, 154, 154);
+    scale: 1.2;
+}
+
+.botaocopiar    {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px;
+    background: #ff5252;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botaocopiar:hover  {
     background-color:  rgb(224, 154, 154);
     scale: 1.2;
 }
